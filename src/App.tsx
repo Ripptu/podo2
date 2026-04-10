@@ -64,7 +64,7 @@ const t = {
       jobTitle: "Podologin / Podologe für unsere Praxis in Wesel, Oberhausen und Dortmund in Vollzeit / Teilzeit gesucht",
       jobDesc: "Wir suchen eine engagierte Podologin oder einen engagierten Podologen für unsere kassenzugelassene Praxis in Wesel, Oberhausen und Dortmund. Diese Stelle kann auch mit dem Schwerpunkt Haus- und Heimbesuche angetreten werden.",
       applyTitle: "Bewerbung",
-      applyDesc: "Wir freuen uns darauf, Sie kennenzulernen!\n\nFalls Sie sich angesprochen fühlen, kontaktieren Sie uns bitte direkt über WhatsApp oder rufen Sie uns an."
+      applyDesc: "Wir freuen uns darauf, Sie kennenzulernen!\n\nBitte senden Sie Ihre schriftliche Bewerbung an:"
     },
     news: {
       title: "Aktuelles",
@@ -150,7 +150,7 @@ const t = {
       jobTitle: "Podiatrist for our practice in Wesel, Oberhausen and Dortmund sought (full-time / part-time)",
       jobDesc: "We are looking for a dedicated podiatrist for our licensed practice in Wesel, Oberhausen and Dortmund. This position can also be taken up with a focus on home visits.",
       applyTitle: "Application",
-      applyDesc: "We look forward to getting to know you!\n\nIf this appeals to you, please contact us directly via WhatsApp or give us a call."
+      applyDesc: "We look forward to getting to know you!\n\nPlease send your written application to:"
     },
     news: {
       title: "News",
@@ -236,7 +236,7 @@ const t = {
       jobTitle: "Cần tuyển Bác sĩ chuyên khoa chân cho phòng khám tại Wesel, Oberhausen và Dortmund (toàn thời gian / bán thời gian)",
       jobDesc: "Chúng tôi đang tìm kiếm một bác sĩ chuyên khoa chân tận tâm cho phòng khám được cấp phép của chúng tôi tại Wesel, Oberhausen và Dortmund. Vị trí này cũng có thể tập trung vào việc thăm khám tại nhà.",
       applyTitle: "Ứng tuyển",
-      applyDesc: "Chúng tôi rất mong được làm quen với bạn!\n\nNếu bạn quan tâm, vui lòng liên hệ trực tiếp với chúng tôi qua WhatsApp hoặc gọi điện thoại."
+      applyDesc: "Chúng tôi rất mong được làm quen với bạn!\n\nVui lòng gửi đơn ứng tuyển bằng văn bản của bạn đến:"
     },
     news: {
       title: "Tin tức",
@@ -271,27 +271,26 @@ const serviceIcons = [Activity, Stethoscope, Scissors, FileText, Activity];
 export default function App() {
   const [lang, setLang] = useState<'de' | 'en' | 'vi'>('de');
   const [loc, setLoc] = useState<'Wesel' | 'Oberhausen' | 'Dortmund'>('Oberhausen');
+  const [activeLegal, setActiveLegal] = useState<'imprint' | 'privacy' | 'terms' | null>(null);
   
   const currentT = t[lang];
 
   const locData = {
     Oberhausen: {
       address: "Alleestraße 1\n46049 Oberhausen",
+      mapsLink: "https://maps.google.com/?q=Alleestraße+1,+46049+Oberhausen",
       phone: "015562 064080",
       whatsapp: "015562 064080",
       transit: currentT.loc.transitO,
       hours: [
-        { d: currentT.loc.days[0], t: "09:00 - 16:00" },
-        { d: currentT.loc.days[1], t: "09:00 - 16:00" },
-        { d: currentT.loc.days[2], t: "09:00 - 16:00" },
-        { d: currentT.loc.days[3], t: "09:00 - 16:00" },
-        { d: currentT.loc.days[4], t: "09:00 - 16:00" },
-        { d: currentT.loc.days[5], t: currentT.loc.closed },
-        { d: currentT.loc.days[6], t: currentT.loc.closed },
+        { d: currentT.loc.days[7], t: "09:00 - 17:00" },
+        { d: currentT.loc.days[4], t: "09:00 - 14:00" },
+        { d: currentT.loc.days[8], t: currentT.loc.closed },
       ]
     },
     Wesel: {
       address: "Am Blauen Hahn 5\n46483 Wesel",
+      mapsLink: "https://maps.google.com/?q=Am+Blauen+Hahn+5,+46483+Wesel",
       phone: "01525 5629113",
       whatsapp: "01525 5629113",
       transit: currentT.loc.transitW,
@@ -303,6 +302,7 @@ export default function App() {
     },
     Dortmund: {
       address: "Kampstr. 45\n44137 Dortmund",
+      mapsLink: "https://maps.google.com/?q=Kampstr.+45,+44137+Dortmund",
       phone: "015568 839795",
       whatsapp: "015568 839795",
       transit: currentT.loc.transitD,
@@ -405,7 +405,11 @@ export default function App() {
                   <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center shrink-0 text-blue-600"><MapPin size={20} /></div>
                   <div>
                     <div className="font-bold text-slate-900">{currentT.loc.address}</div>
-                    <div className="text-slate-600 whitespace-pre-line">{activeLoc.address}</div>
+                    <div className="text-slate-600 whitespace-pre-line">
+                      <a href={activeLoc.mapsLink} target="_blank" rel="noopener noreferrer" className="hover:underline hover:text-blue-600">
+                        {activeLoc.address}
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -456,12 +460,12 @@ export default function App() {
             </div>
             
             <div className="grid sm:grid-cols-2 gap-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors">
+              <a href={`tel:${activeLoc.phone.replace(/\s+/g, '')}`} className="bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors">
                 <Phone size={18} /> {currentT.loc.callNow}
-              </button>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors">
+              </a>
+              <a href={activeLoc.mapsLink} target="_blank" rel="noopener noreferrer" className="bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors">
                 <MapPin size={18} /> {currentT.loc.map}
-              </button>
+              </a>
               <button className="bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors sm:col-span-2">
                 <Navigation size={18} /> {currentT.loc.gallery}
               </button>
@@ -559,19 +563,10 @@ export default function App() {
               <h4 className="font-bold text-blue-600 mb-2">{currentT.jobs.applyTitle}</h4>
               <p className="text-sm text-slate-600 mb-6 whitespace-pre-line">{currentT.jobs.applyDesc}</p>
               
-              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-colors">
-                  <MessageCircle size={16} /> WhatsApp
-                </button>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-colors">
-                  <Phone size={16} /> Wesel
-                </button>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-colors">
-                  <Phone size={16} /> Oberhausen
-                </button>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white py-2.5 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-colors">
-                  <Phone size={16} /> Dortmund
-                </button>
+              <div className="flex">
+                <a href="mailto:podoaktiv@gmail.com" className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg text-sm font-medium flex items-center justify-center gap-2 transition-colors">
+                  <Mail size={18} /> podoaktiv@gmail.com
+                </a>
               </div>
             </div>
           </div>
@@ -679,12 +674,53 @@ export default function App() {
         <div className="max-w-6xl mx-auto border-t border-slate-700 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
           <div>© 2026 Podo Aktiv. {currentT.footer.rights}</div>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-white transition-colors">{currentT.footer.imprint}</a>
-            <a href="#" className="hover:text-white transition-colors">{currentT.footer.privacy}</a>
-            <a href="#" className="hover:text-white transition-colors">{currentT.footer.terms}</a>
+            <button onClick={() => setActiveLegal('imprint')} className="hover:text-white transition-colors">{currentT.footer.imprint}</button>
+            <button onClick={() => setActiveLegal('privacy')} className="hover:text-white transition-colors">{currentT.footer.privacy}</button>
+            <button onClick={() => setActiveLegal('terms')} className="hover:text-white transition-colors">{currentT.footer.terms}</button>
           </div>
         </div>
       </footer>
+
+      {/* Legal Modal */}
+      {activeLegal && (
+        <div className="fixed inset-0 bg-slate-900/50 z-[100] flex items-center justify-center p-4 backdrop-blur-sm" onClick={() => setActiveLegal(null)}>
+          <div className="bg-white rounded-2xl shadow-xl w-full max-w-2xl max-h-[80vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
+            <div className="sticky top-0 bg-white border-b border-slate-100 p-4 flex items-center justify-between">
+              <h3 className="text-xl font-bold text-slate-900">
+                {activeLegal === 'imprint' && currentT.footer.imprint}
+                {activeLegal === 'privacy' && currentT.footer.privacy}
+                {activeLegal === 'terms' && currentT.footer.terms}
+              </h3>
+              <button onClick={() => setActiveLegal(null)} className="text-slate-400 hover:text-slate-600 p-2">
+                ✕
+              </button>
+            </div>
+            <div className="p-6 text-slate-600 text-sm space-y-4">
+              {activeLegal === 'imprint' && (
+                <>
+                  <p><strong>Angaben gemäß § 5 TMG:</strong></p>
+                  <p>Podo Aktiv<br/>Am Blauen Hahn 5<br/>46483 Wesel</p>
+                  <p><strong>Kontakt:</strong><br/>Telefon: 01525 5629113<br/>E-Mail: podoaktiv@gmail.com</p>
+                  <p>Dies ist ein Platzhalter für das vollständige Impressum. Bitte fügen Sie hier Ihre rechtlich bindenden Angaben ein.</p>
+                </>
+              )}
+              {activeLegal === 'privacy' && (
+                <>
+                  <p><strong>Datenschutzerklärung</strong></p>
+                  <p>Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+                  <p>Dies ist ein Platzhalter für die vollständige Datenschutzerklärung. Bitte fügen Sie hier Ihre rechtlich bindenden Angaben ein.</p>
+                </>
+              )}
+              {activeLegal === 'terms' && (
+                <>
+                  <p><strong>Allgemeine Geschäftsbedingungen (AGB)</strong></p>
+                  <p>Dies ist ein Platzhalter für die vollständigen AGB. Bitte fügen Sie hier Ihre rechtlich bindenden Angaben ein.</p>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
