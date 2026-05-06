@@ -76,8 +76,86 @@ const t = {
     reviews: {
       title: "Patientenbewertungen",
       subtitle: "Erfahrungsberichte unserer Patientinnen und Patienten",
-      reviewText: "War neulich das erste Mal dort und ich muss sagen, ich hatte noch nie eine so kompetente und gründliche Fußpflege. Ich würde direkt herzlich empfangen und fühlte mich von der ersten Sekunde an, wohl. Ich komme sehr gerne wieder.",
-      reviewTime: "vor 7 Monaten"
+      items: [
+        {
+          name: "Jutta Mehlmann",
+          time: "vor 5 Monaten",
+          text: "Gehe regelmäßig zu dieser Praxis und bin bestens zufrieden und froh, dass es diese Praxis gibt! Neben der spitzenmäßigen Behandlung bekomme ich immer sehr gute Erklärungen dazu und eine exzellente Beratung, welche mir schon sehr geholfen ..."
+        },
+        {
+          name: "Diane van den Bruck",
+          time: "vor 4 Monaten",
+          text: "Mir wurde spontan und absolut fachmännisch geholfen. Sehr freundlicher Umgang und faire Behandlung/Beratung. Wirklich empfehlenswert! Herzlichen Dank!"
+        },
+        {
+          name: "Pascal Sassenhagen",
+          time: "vor 5 Monaten",
+          text: "5 Sterne sind zu wenig .Super Behandlung ,sehr nettes Team !Nur zu empfehlen"
+        },
+        {
+          name: "Melanie Bojanic",
+          time: "vor einem Jahr",
+          text: "Super kompetente und herzliche Praxis. Ohne Termin wurde meine Tochter sofort behandelt und war nach der Behandlung schmerzfrei. Unglaublich, da weiß man was man macht. Sehr zu empfehlen auch für Angstpatienten"
+        },
+        {
+          name: "Philip Steinke",
+          time: "vor einem Jahr",
+          text: "Ich war in Behandlung bei der Praxis Nguyen und sie haben sich jedes Mal professionell um mich gekümmert! Wirklich ausgebildete Top Leute da, die sich auskennen. Kann ich jedem empfehlen. Vielen Dank!"
+        },
+        {
+          name: "Lara Scheufele",
+          time: "vor einem Jahr",
+          text: "War neulich das erste Mal dort und ich muss sagen, ich hatte noch nie eine so kompetente und gründliche Fußpflege. Ich würde direkt herzlich empfangen und fühlte mich von der ersten Sekunde an, wohl. Ich komme sehr gerne wieder."
+        },
+        {
+          name: "Stefan Rabenaldt",
+          time: "vor einem Jahr",
+          text: "Sehr gute und Professionelle Fusspflege. Da ich auch Diabetiker bin , kann ich die Praxis nur Empfehlen. Habe seit ich hier in Behandlung keine Probleme mehr mit meinen Füssen. Top und sehr nettes Team , kann ich wirklich nur Empfehlen."
+        },
+        {
+          name: "Melanie Schubert",
+          time: "vor 2 Jahren",
+          text: "Absolut kompetente und medizinische Behandlung. Darüberhinaus ist das Ehepaar Nguyen immer sehr sehr freundlich und zuvorkommend. Termine bekommt man immer sehr zügig und ohne lange Wartezeit. Keine andere Podologie hat sich meinen durch eine kosmetische Fußpflege verstümmelten Zehen so angenommen wie dort. Daher 5 Sterne +"
+        },
+        {
+          name: "Annika Lula",
+          time: "vor einem Jahr",
+          text: "Super freundliches Team und hervorragende Beratung und fachlich kompetente Behandlung. Ich habe mich sehr gut aufgehoben gefühlt!"
+        },
+        {
+          name: "nana s",
+          time: "vor 11 Monaten",
+          text: "War vor ein paar Monaten da und hab eine super Behandlung und Beratung bekommen. Man kann auch super mit ihr quatschen während der Behandlung 🥳"
+        },
+        {
+          name: "Uwe F.",
+          time: "vor 2 Jahren",
+          text: "Sehr schnell, ohne Wartezeit wurde ich direkt beim ersten Kontakt behandelt, hatte nicht mal einen Termin.\nWar nach der ersten Behandlung sogar schon schmerzfrei. Alle nächsten ..."
+        },
+        {
+          name: "Asena S.",
+          time: "vor 2 Jahren",
+          text: "Hervorragende Podologie-Praxis!\nDas Team ist nicht nur fachlich kompetent, sondern auch äußerst freundlich und hilfsbereit. Die Behandlungen sind effektiv, und man fühlt sich hier wirklich gut aufgehoben.\nKlare Empfehlung!"
+        },
+        {
+            name: "M B",
+            time: "vor einem Jahr",
+            text: "Ich habe mich in der Praxis sehr wohlgefühlt. Super Behandlung!"
+        },
+        {
+            name: "Vivi H.",
+            time: "vor 2 Jahren",
+            text: "Ich war heute bei Frau Nguyen und war durchweg begeistert. Sehr kompetent und unfassbar freundlich. Es wurde alles gut erklärt und man ist sehr darauf aus, zu helfen. Ich bedanke mich herzlich!!"
+        },
+        {
+            name: "Hans",
+            time: "vor einem Jahr",
+            text: "Seit langem dort Kunde - immer wieder von der Gründlichkeit und Freundlichkeit begeistert. Ich fühle mich dort in guten Händen."
+        }
+      ],
+      googleSource: "Basierend auf 55 Google Bewertungen",
+      googleButton: "Alle Google-Rezensionen ansehen",
+      rating: "4,9"
     },
     footer: {
       desc: "Ihre professionelle Podologie-Praxis für gesunde und gepflegte Füße in Wesel, Oberhausen & Dortmund.",
@@ -162,8 +240,86 @@ const t = {
     reviews: {
       title: "Patient Reviews",
       subtitle: "Testimonials from our patients",
-      reviewText: "Was there for the first time recently and I have to say, I've never had such competent and thorough foot care. I was warmly welcomed immediately and felt comfortable from the very first second. I will gladly come back.",
-      reviewTime: "7 months ago"
+      items: [
+        {
+          name: "Jutta Mehlmann",
+          time: "5 months ago",
+          text: "Gehe regelmäßig zu dieser Praxis und bin bestens zufrieden und froh, dass es diese Praxis gibt! Neben der spitzenmäßigen Behandlung bekomme ich immer sehr gute Erklärungen dazu und eine exzellente Beratung, welche mir schon sehr geholfen ..."
+        },
+        {
+          name: "Diane van den Bruck",
+          time: "4 months ago",
+          text: "Mir wurde spontan und absolut fachmännisch geholfen. Sehr freundlicher Umgang und faire Behandlung/Beratung. Wirklich empfehlenswert! Herzlichen Dank!"
+        },
+        {
+          name: "Pascal Sassenhagen",
+          time: "5 months ago",
+          text: "5 Sterne sind zu wenig .Super Behandlung ,sehr nettes Team !Nur zu empfehlen"
+        },
+        {
+          name: "Melanie Bojanic",
+          time: "a year ago",
+          text: "Super kompetente und herzliche Praxis. Ohne Termin wurde meine Tochter sofort behandelt und war nach der Behandlung schmerzfrei. Unglaublich, da weiß man was man macht. Sehr zu empfehlen auch für Angstpatienten"
+        },
+        {
+          name: "Philip Steinke",
+          time: "a year ago",
+          text: "Ich war in Behandlung bei der Praxis Nguyen und sie haben sich jedes Mal professionell um mich gekümmert! Wirklich ausgebildete Top Leute da, die sich auskennen. Kann ich jedem empfehlen. Vielen Dank!"
+        },
+        {
+          name: "Lara Scheufele",
+          time: "a year ago",
+          text: "War neulich das erste Mal dort und ich muss sagen, ich hatte noch nie eine so kompetente und gründliche Fußpflege. Ich würde direkt herzlich empfangen und fühlte mich von der ersten Sekunde an, wohl. Ich komme sehr gerne wieder."
+        },
+        {
+          name: "Stefan Rabenaldt",
+          time: "a year ago",
+          text: "Sehr gute und Professionelle Fusspflege. Da ich auch Diabetiker bin , kann ich die Praxis nur Empfehlen. Habe seit ich hier in Behandlung keine Probleme mehr mit meinen Füssen. Top und sehr nettes Team , kann ich wirklich nur Empfehlen."
+        },
+        {
+          name: "Melanie Schubert",
+          time: "2 years ago",
+          text: "Absolut kompetente und medizinische Behandlung. Darüberhinaus ist das Ehepaar Nguyen immer sehr sehr freundlich und zuvorkommend. Termine bekommt man immer sehr zügig und ohne lange Wartezeit. Keine andere Podologie hat sich meinen durch eine kosmetische Fußpflege verstümmelten Zehen so angenommen wie dort. Daher 5 Sterne +"
+        },
+        {
+          name: "Annika Lula",
+          time: "a year ago",
+          text: "Super freundliches Team und hervorragende Beratung und fachlich kompetente Behandlung. Ich habe mich sehr gut aufgehoben gefühlt!"
+        },
+        {
+          name: "nana s",
+          time: "11 months ago",
+          text: "War vor ein paar Monaten da und hab eine super Behandlung und Beratung bekommen. Man kann auch super mit ihr quatschen während der Behandlung 🥳"
+        },
+        {
+          name: "Uwe F.",
+          time: "2 years ago",
+          text: "Sehr schnell, ohne Wartezeit wurde ich direkt beim ersten Kontakt behandelt, hatte nicht mal einen Termin.\nWar nach der ersten Behandlung sogar schon schmerzfrei. Alle nächsten ..."
+        },
+        {
+          name: "Asena S.",
+          time: "2 years ago",
+          text: "Hervorragende Podologie-Praxis!\nDas Team ist nicht nur fachlich kompetent, sondern auch äußerst freundlich und hilfsbereit. Die Behandlungen sind effektiv, und man fühlt sich hier wirklich gut aufgehoben.\nKlare Empfehlung!"
+        },
+        {
+            name: "M B",
+            time: "a year ago",
+            text: "Ich habe mich in der Praxis sehr wohlgefühlt. Super Behandlung!"
+        },
+        {
+            name: "Vivi H.",
+            time: "2 years ago",
+            text: "Ich war heute bei Frau Nguyen und war durchweg begeistert. Sehr kompetent und unfassbar freundlich. Es wurde alles gut erklärt und man ist sehr darauf aus, zu helfen. Ich bedanke mich herzlich!!"
+        },
+        {
+            name: "Hans",
+            time: "a year ago",
+            text: "Seit langem dort Kunde - immer wieder von der Gründlichkeit und Freundlichkeit begeistert. Ich fühle mich dort in guten Händen."
+        }
+      ],
+      googleSource: "Based on 55 Google Reviews",
+      googleButton: "View all Google Reviews",
+      rating: "4.9"
     },
     footer: {
       desc: "Your professional podiatry practice for healthy and well-groomed feet in Wesel, Oberhausen & Dortmund.",
@@ -248,8 +404,86 @@ const t = {
     reviews: {
       title: "Đánh giá của bệnh nhân",
       subtitle: "Lời chứng thực từ bệnh nhân của chúng tôi",
-      reviewText: "Gần đây đã đến đó lần đầu tiên và tôi phải nói rằng, tôi chưa bao giờ được chăm sóc chân chu đáo và chuyên nghiệp như vậy. Tôi được chào đón nồng nhiệt ngay lập tức và cảm thấy thoải mái ngay từ giây phút đầu tiên. Tôi sẽ rất vui được quay lại.",
-      reviewTime: "7 tháng trước"
+      items: [
+        {
+          name: "Jutta Mehlmann",
+          time: "5 tháng trước",
+          text: "Gehe regelmäßig zu dieser Praxis und bin bestens zufrieden und froh, dass es diese Praxis gibt! Neben der spitzenmäßigen Behandlung bekomme ich immer sehr gute Erklärungen dazu und eine exzellente Beratung, welche mir schon sehr geholfen ..."
+        },
+        {
+          name: "Diane van den Bruck",
+          time: "4 tháng trước",
+          text: "Mir wurde spontan und absolut fachmännisch geholfen. Sehr freundlicher Umgang und faire Behandlung/Beratung. Wirklich empfehlenswert! Herzlichen Dank!"
+        },
+        {
+          name: "Pascal Sassenhagen",
+          time: "5 tháng trước",
+          text: "5 Sterne sind zu wenig .Super Behandlung ,sehr nettes Team !Nur zu empfehlen"
+        },
+        {
+          name: "Melanie Bojanic",
+          time: "1 năm trước",
+          text: "Super kompetente und herzliche Praxis. Ohne Termin wurde meine Tochter sofort behandelt und war nach der Behandlung schmerzfrei. Unglaublich, da weiß man was man macht. Sehr zu empfehlen auch für Angstpatienten"
+        },
+        {
+          name: "Philip Steinke",
+          time: "1 năm trước",
+          text: "Ich war in Behandlung bei der Praxis Nguyen und sie haben sich jedes Mal professionell um mich gekümmert! Wirklich ausgebildete Top Leute da, die sich auskennen. Kann ich jedem empfehlen. Vielen Dank!"
+        },
+        {
+          name: "Lara Scheufele",
+          time: "1 năm trước",
+          text: "War neulich das erste Mal dort und ich muss sagen, ich hatte noch nie eine so kompetente und gründliche Fußpflege. Ich würde direkt herzlich empfangen und fühlte mich von der ersten Sekunde an, wohl. Ich komme sehr gerne wieder."
+        },
+        {
+          name: "Stefan Rabenaldt",
+          time: "1 năm trước",
+          text: "Sehr gute und Professionelle Fusspflege. Da ich auch Diabetiker bin , kann ich die Praxis nur Empfehlen. Habe seit ich hier in Behandlung keine Probleme mehr mit meinen Füssen. Top und sehr nettes Team , kann ich wirklich nur Empfehlen."
+        },
+        {
+          name: "Melanie Schubert",
+          time: "2 năm trước",
+          text: "Absolut kompetente und medizinische Behandlung. Darüberhinaus ist das Ehepaar Nguyen immer sehr sehr freundlich und zuvorkommend. Termine bekommt man immer sehr zügig und ohne lange Wartezeit. Keine andere Podologie hat sich meinen durch eine kosmetische Fußpflege verstümmelten Zehen so angenommen wie dort. Daher 5 Sterne +"
+        },
+        {
+          name: "Annika Lula",
+          time: "1 năm trước",
+          text: "Super freundliches Team und hervorragende Beratung und fachlich kompetente Behandlung. Ich habe mich sehr gut aufgehoben gefühlt!"
+        },
+        {
+          name: "nana s",
+          time: "11 tháng trước",
+          text: "War vor ein paar Monaten da und hab eine super Behandlung und Beratung bekommen. Man kann auch super mit ihr quatschen während der Behandlung 🥳"
+        },
+        {
+          name: "Uwe F.",
+          time: "2 năm trước",
+          text: "Sehr schnell, ohne Wartezeit wurde ich direkt beim ersten Kontakt behandelt, hatte nicht mal einen Termin.\nWar nach der ersten Behandlung sogar schon schmerzfrei. Alle nächsten ..."
+        },
+        {
+          name: "Asena S.",
+          time: "2 năm trước",
+          text: "Hervorragende Podologie-Praxis!\nDas Team ist nicht nur fachlich kompetent, sondern auch äußerst freundlich und hilfsbereit. Die Behandlungen sind effektiv, und man fühlt sich hier wirklich gut aufgehoben.\nKlare Empfehlung!"
+        },
+        {
+            name: "M B",
+            time: "1 năm trước",
+            text: "Ich habe mich in der Praxis sehr wohlgefühlt. Super Behandlung!"
+        },
+        {
+            name: "Vivi H.",
+            time: "2 năm trước",
+            text: "Ich war heute bei Frau Nguyen und war durchweg begeistert. Sehr kompetent und unfassbar freundlich. Es wurde alles gut erklärt und man ist sehr darauf aus, zu helfen. Ich bedanke mich herzlich!!"
+        },
+        {
+            name: "Hans",
+            time: "1 năm trước",
+            text: "Seit langem dort Kunde - immer wieder von der Gründlichkeit und Freundlichkeit begeistert. Ich fühle mich dort in guten Händen."
+        }
+      ],
+      googleSource: "Dựa trên 55 đánh giá của Google",
+      googleButton: "Xem tất cả đánh giá trên Google",
+      rating: "4,9"
     },
     footer: {
       desc: "Phòng khám chăm sóc chân chuyên nghiệp của bạn cho đôi chân khỏe mạnh và được chăm sóc tốt tại Wesel, Oberhausen & Dortmund.",
@@ -597,15 +831,49 @@ export default function App() {
           <h2 className="text-3xl font-bold text-slate-900 mb-4">{currentT.reviews.title}</h2>
           <p className="text-slate-600 mb-8">{currentT.reviews.subtitle}</p>
           
-          <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm text-left mb-8">
-            <div className="font-bold text-slate-900">Lara Scheufele</div>
-            <div className="text-xs text-slate-500 mb-3">{currentT.reviews.reviewTime}</div>
-            <div className="flex text-yellow-400 mb-4">
-              {[1,2,3,4,5].map(i => <Star key={i} fill="currentColor" size={16} />)}
+          <div className="bg-white border border-slate-200 rounded-2xl p-6 shadow-sm inline-block mb-10 w-full md:w-auto">
+            <div className="flex flex-col md:flex-row items-center gap-6 justify-center">
+              <div className="flex flex-col items-center">
+                <div className="text-4xl font-bold text-slate-900">{currentT.reviews.rating}</div>
+                <div className="flex text-yellow-400 mt-1 mb-1">
+                  {[1,2,3,4,5].map(i => <Star key={i} fill="currentColor" size={20} />)}
+                </div>
+                <div className="text-xs text-slate-500">{currentT.reviews.googleSource}</div>
+              </div>
+              <div className="h-px w-full md:h-16 md:w-px bg-slate-100"></div>
+              <div className="flex flex-col gap-3">
+                <a href="https://www.google.com/search?sca_esv=39f50cfd4d7ec138&cs=1&sxsrf=ANbL-n7gYvEBp0nvY-QIuhkyq-aTT-A7LQ:1778007629577&q=Podo+Aktiv+-+Praxis+f%C3%BCr+Podologie+Rezensionen&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxK2MDExsjAwNbU0MTMzMTA3NjQ238DI-IpRLyA_JV_BMbsks0xBVyGgKLEis1gh7fCeIgWQRE5-emaqQlBqVWpecWZ-XmreIlYSNQAA4908y3wAAAA&rldimm=8442805594664073137&tbm=lcl&hl=de-DE&sa=X&ved=2ahUKEwj2yavJ6qKUAxWScvEDHVrqGG0Q9fQKegQIERAG&biw=1920&bih=945&dpr=1#lkt=LocalPoiReviews" target="_blank" rel="noopener noreferrer" className="bg-white border border-slate-200 hover:border-slate-300 hover:bg-slate-50 text-slate-700 py-2.5 px-6 rounded-lg text-sm font-medium flex items-center justify-center gap-3 transition-colors">
+                  <svg viewBox="0 0 24 24" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  {currentT.reviews.googleButton}
+                </a>
+              </div>
             </div>
-            <p className="text-slate-600 text-sm leading-relaxed">
-              {currentT.reviews.reviewText}
-            </p>
+          </div>
+
+          <div className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory hide-scrollbar">
+            {currentT.reviews.items.map((review, i) => (
+              <div key={i} className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm flex flex-col min-w-[300px] w-[300px] md:min-w-[400px] md:w-[400px] shrink-0 snap-start text-left">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold text-lg shrink-0">
+                    {review.name.charAt(0)}
+                  </div>
+                  <div>
+                    <div className="font-bold text-slate-900">{review.name}</div>
+                    <div className="text-xs text-slate-500">{review.time}</div>
+                  </div>
+                </div>
+                <div className="flex text-yellow-400 mb-4">
+                  {[1,2,3,4,5].map(star => <Star key={star} fill="currentColor" size={14} />)}
+                </div>
+                <p className="text-slate-600 text-sm leading-relaxed flex-grow">
+                  "{review.text}"
+                </p>
+                <div className="mt-4 pt-4 border-t border-slate-50 flex items-center gap-2 text-xs text-slate-400">
+                  <svg viewBox="0 0 24 24" width="14" height="14" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+                  Google Rezension
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

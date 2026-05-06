@@ -1,5 +1,6 @@
 {
-  "name": "",
+  "name": "Podo-Aktiv",
   "description": "",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": []
 }
